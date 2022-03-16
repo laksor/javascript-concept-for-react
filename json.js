@@ -21,3 +21,14 @@ fetch('url')
     .then (res => res.json())
     .then(data => console.log(data));
 
+// keys
+
+const Keys = Object.keys(student);
+console.log(Keys);
+
+// values
+const value = Object.values(student);
+console.log(value);
+
+// for of using on array like object
+// for in using on object
