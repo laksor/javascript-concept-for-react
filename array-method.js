@@ -11,10 +11,11 @@ const products = [
 // map
 const brands = products.map(product => product.brand);
 console.log(brands);
+
 const price = products.map(product => product.price);
 console.log(price);
 
-// foreach 
+// foreach (no return)
 products.forEach(product => console.log(product));
 products.forEach(product => console.log(product.color));
 // multi line
@@ -22,4 +23,14 @@ products.forEach(product => {
 
 })
 
-// 
+// filter
+
+const cheap = products.filter(product => product.price > 5000);
+console.log(cheap);
+
+const name = products.filter(product => product.name.includes('w'));
+console.log(name);
+
+// find (only show the first one)
+const special = products.find(product => product.name.includes('n'));
+console.log(special);
