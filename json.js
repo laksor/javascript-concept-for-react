@@ -14,3 +14,10 @@ console.log(studentJSON);
 // JSON parse (convert to normal js)
 const studentObj = JSON.parse(studentJSON);
 console.log(studentObj);
+
+// fetch 
+
+fetch('url')
+    .then (res => res.json())
+    .then(data => console.log(data));
+
