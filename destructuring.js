@@ -30,3 +30,25 @@ const [first, second] = box(90, 44);
 // object  Destructuring
 
 const {name, age} = { name: 'alu', age: 66 };
+
+const employee = {
+    ide: 'VS CODE',
+    desi: 'developer',
+    machine: 'mac',
+    language: ['html', 'css', 'js'],
+    specification: {
+        height: 66,
+        weight: 77,
+        drink: 'water',
+        watch: {
+            color: 'red',
+            price: 6000
+        }
+    }
+}
+
+const {machine, ide} = employee;
+const {weight, drink} = employee.specification;
+const {color} = employee.specification.watch;
+console.log(color);
+
