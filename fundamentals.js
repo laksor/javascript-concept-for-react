@@ -19,6 +19,7 @@ else if(fatherName !== 'lama'){
 else{
 
 }
+
 // 3.array declare
 // index
 // length, push
@@ -30,6 +31,7 @@ for(let i = 0; i < 10; i++){
     const arr = arr[i];
     console.log(arr);
 }
+
 // 5.function 
 function mul (num1, num2){
     const result = num1 * num2;
@@ -37,6 +39,7 @@ function mul (num1, num2){
 }
 const output = mul(4, 5);
 console.log(output);
+
 // 6. object
 //3 ways to access property by name
 const student = {
@@ -44,6 +47,8 @@ const student = {
     age: 45,
     movies: ['king', 'sallu'],
 }
+const vari = 'age';
+console.log(student[vari]);// access by variable
 
 console.log(student.name); // direct by property
 console.log(student['age']); // access by property name
