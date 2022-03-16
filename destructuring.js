@@ -52,3 +52,7 @@ const {weight, drink} = employee.specification;
 const {color} = employee.specification.watch;
 console.log(color);
 
+// optional chaining
+//  have to use ? mark
+// if there is no value than it shows undefined.
+const {brand} = employee?.specification?.watch;
