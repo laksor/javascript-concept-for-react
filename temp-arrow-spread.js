@@ -1,6 +1,7 @@
 // template string, arrow function, spread operator
 
 const arr = [3, 4, 5, 6, 7];
+const number = [3, 4, 5, 6, 7];
 const student = {
     name: 'sakib',
     age: 45,
@@ -24,3 +25,12 @@ const doMath = (num1, num2) => {
 console.log(getF());
 
 // spread operator
+const newNumber = [...number];
+
+//creating a new array from a older array and  adding element in a array using spread operator 
+const currentNumber = [...number, 55]; 
+
+number.push(100);
+console.log(number);
+console.log(newNumber);
+console.log(currentNumber);
